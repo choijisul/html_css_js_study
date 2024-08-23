@@ -6,7 +6,41 @@
     <title>3.7 ~ 예제 작성</title>
 </head>
 <body>
-    
+    <!-- 3.7표 관련 -->
+     <table style="border: 1px solid black;"> 
+        <col style="width: 80px; ">
+        <colgroup span="2" style="width: 150px;"></colgroup>
+        <col style="width: 100px;">
+        <caption>상품 정보</caption>
+        <tr>
+            <th scope="col">번호</th>
+            <th scope="col">상품명</th>
+            <th scope="col">수량</th>
+            <th scope="col">가격</th>
+        </tr>
+        <tr>
+            <td scope="row">1</td>
+            <td>콜라</td>
+            <td>1개</td>
+            <td>1,500원</td>
+        </tr>
+        <tr>
+            <td scope="row">2</td>
+            <td>사이다</td>
+            <td>2개</td>
+            <td rowspan="2">1,000원</td>
+        </tr>
+        <tr>
+            <td scope="row">3</td>
+            <td>탄산수</td>
+            <td>3개</td>
+            <!-- 병합해서 생성 안 함. -->
+        </tr>
+        <tr>
+            <td>총 금액</td>
+            <td colspan="3">6,000원</td>
+        </tr>
+     </table>
 
 </body>
 </html>
