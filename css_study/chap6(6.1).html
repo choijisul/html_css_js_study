@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap6.1 예제 작성</title>
+    <style>
+        h1{
+            font-size: 16px;
+            font-weight: normal;
+            color: red;
+        }
+        h1{ color: blue; }
+        h1{ color: orange; }
+
+        .title{ color: blue; }
+        h2{ color: red; }
+
+        p{ color: blue !important; }
+
+        #main{ color: red; }
+
+        .p1{ font-size: 16px ;}
+        .p2{ font-size: 80%; }
+        .p3{ font-size: 2em; }
+        .p4{ font-size: 2rem; }
+        .p5{ font-size: 1vh; }
+    </style>
+</head>
+<body>
+    <h1>h1 tag</h1>
+
+    <h2 class="title">h2 tag</h2>
+
+    <div id="main">
+        <div class="sub">
+            <p class="title" style="color: green; ">important</p>
+            <h3>inherit</h3>
+        </div>
+    </div>
+    <hr>
+
+    <div style="height: 300px; width: 1000px; background-color: #aaa;">
+        <p class="p1">p tag 1</p>
+        <p class="p2">p tag 2</p>
+        <p class="p3">p tag 3</p>
+        <p class="p4">p tag 4</p>
+        <p class="p5">p tag 5</p>
+    </div>
+    <hr>
+
+    <h2 style="color: indianred">h1 tag</h2>
+    <h2 style="color: rgba(48, 177, 97, .5)">h1 tag</h2>
+    <h2 style="color: #523385">h1 tag</h2>
+
+</body>
+</html>
