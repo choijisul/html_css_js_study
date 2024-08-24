@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap5.2 예제 작성</title>
+    <style>
+        p, #title, .red{
+            color: red;
+        }
+
+        .box1 > p{
+            color: orange;
+        }
+
+        .box2 p{
+            color: green;
+        }
+
+        h1 + h2{
+            color: blue
+        }
+
+        /* h1 ~ h2{
+            color: blue;
+        } */
+
+    </style>
+</head>
+<body>
+    <p>p</p>
+    <h1 id="title">h1 id title</h1>
+    <h1 class="red">h1 class red</h1>
+    <hr>
+
+    <div class="box1">
+        <p>.box1 > p</p>
+    </div>
+    <hr>
+
+    <div class="box2">
+        <p>p1</p>
+        <h3>h3</h3>
+        <p>p2</p>
+    </div>
+    <hr>
+
+    <h1>h1</h1>
+    <h2>h2 1</h2>
+    <h2>h2 2</h2>
+    <h3>h3</h3>
+    <h2>h2 3</h2>
+</body>
+</html>
