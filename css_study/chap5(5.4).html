@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap5.4 예제 작성</title>
+    <style>
+        /* 링크 가상 클래스 선택자 */
+        a:link {
+            color: orange;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        /* 동적 가상 클래스 선택자 */
+        .btn1:hover {
+            color: red;
+        }
+
+        .btn1:active {
+            color: orange;
+        }
+
+        /* 입력 요소 가상 클래스 선택자 */
+        .input1:focus {
+            color: red;
+        }
+
+        .input1:checked+label {
+            color: blue;
+        }
+
+        .input2:disabled,
+        .btn2:disabled {
+            background-color: #ccc;
+        }
+
+        .input2:enabled,
+        .btn2:enabled {
+            background-color: #AAA;
+        }
+        /* 구조적 가상 클래스 선택자 */
+        li:first-child{
+            color: red;
+        }
+        li:last-child{
+            color: orange;
+        }
+        p:nth-child(1){
+            color: red;
+        }
+        p:nth-last-child(1){
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 링크 가상 클래스 선택자 -->
+    <a href="https://github.com/choijisul">링크</a>
+    <hr>
+    <!-- 동적 가상 클래스 선택자 -->
+    <button class="btn1">마우스 올리기</button>
+    <hr>
+    <!-- 입력 요소 가상 클래스 선택자 -->
+    <input class="input1"> <br>
+    <input class="input2" disabled>
+    <button class="btn2" disabled>버튼</button>
+    <hr>
+    <!-- 구조저 가상 클래스 선택자 -->
+    <ul>
+        <li>1번째</li>
+        <li>2번째</li>
+        <li>3번째</li>
+    </ul>
+    <p>lorem 0</p>  <!--만약 body의 첫 자식이었으면 적용.-->
+    <div>
+        <p>lorem 1</p>
+        <p>lorem 2</p>
+    </div>
+</body>
+
+</html>
