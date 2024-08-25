@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap6.7 예제 작성</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: bgchange;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 2;
+            animation-direction: reverse;
+        }
+
+        @keyframes bgchange{
+            0%{ background-color: red; }
+            30%{ background-color: orange; }
+            60%{ background-color: yellow; }
+            100%{ background-color: green; }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
