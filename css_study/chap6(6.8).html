@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap6.8 예제 작성</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .div:hover{
+            /* transform: translate(100px, 200px); */
+            /* transform: translateX(500px); */
+
+            /* transform: scale(2,2); */
+            /* transform: scaleY(5); */
+
+            transform: skew(30deg, 30deg);
+            transform: skewX(20deg);
+        }
+
+        .container{
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box:hover{
+            transform: rotate(30deg);
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+    <hr>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
