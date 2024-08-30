@@ -68,3 +68,20 @@ function printHello(){
 // printHello3 = function printHello3(){
 //     console.log("hello");
 // }
+console.log();
+
+
+//10.5 예제 작성
+const init1 = function(){
+    console.log("initialized");
+}
+init1();
+
+(function init2(){
+    console.log("initialized");
+})();
+// init2();  //에러
+
+(function sum(a,b){
+    console.log(a+b);
+})(10, 20);
