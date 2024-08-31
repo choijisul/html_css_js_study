@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap11.4 예제 작성</title>
+    <script>
+        window.scollTo(100, 200);
+        window.scollBy(100, 200);
+
+        window.scollTo({left:100, top:200});
+        window.scollBy({left:100, top:200});
+
+        widnow.scollTo({top:100, behavior:'smooth'});
+        widnow.scollBy({top:100, behavior:'smooth'});
+    </script>
+</head>
+<body>
+    <button onclick="printInfo()">window 객체 속성</button>
+    <hr>
+    <button onclick="popup()">팝업</button>
+
+    <script src="./javascript/chap11(11.4).js"></script>
+</body>
+</html>
