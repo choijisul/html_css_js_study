@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chap12.5 예제 작성</title>
+</head>
+
+<body>
+    <!-- 폼 조작하기 -->
+    <form name="frm1">
+        <input type="text">
+    </form>
+    <form name="frm2">
+        <input type="text">
+    </form>
+    <form name="frm3">
+        <input type="text">
+    </form>
+    <hr>
+
+    <!-- 폼 요소 선택하기 -->
+    <form name="frm4">
+        <label for="uname">이름</label>
+        <input type="text" id="uname" name="unane">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age">
+        <label for="gender">성별</label>
+        <select>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <button type="submit">전송</button>
+    </form>
+    <hr>
+
+    <!-- 폼 요소 입력 다루기 -->
+    <form name="frm5">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+    </form>
+
+    <form name="frm6">
+        <textarea name="desc"></textarea>
+    </form>
+
+    <form>
+        <label><input type="checkbox" value="apple">apple</label>
+        <label><input type="checkbox" value="banana">banana</label>
+        <label><input type="checkbox" value="orange">orange</label>
+        <label><input type="checkbox" value="melon">melon</label>
+    </form>
+
+    <form>
+        <label><input type="radio" value="apple">apple</label>
+        <label><input type="radio" value="banana">banana</label>
+        <label><input type="radio" value="orange">orange</label>
+        <label><input type="radio" value="melon">melon</label>
+    </form>
+
+    <form>
+        <select>
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="orange">orange</option>
+            <option value="melon">melon</option>
+        </select>
+    </form>
+
+    <form name="frm7">
+        <input type="file" name="upload">
+    </form>
+
+    <script src="javascript/chap12(12.5).js"></script>
+</body>
+
+</html>
